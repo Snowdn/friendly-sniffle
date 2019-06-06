@@ -1,0 +1,10 @@
+version: 3
+
+pullapprove_conditions:
+- condition: "commits.are_signed_off"
+  unmet_status: "failure"
+  explanation: "Commits need to be signed off"
+
+# You could add review groups to have review
+# automatically start when the conditions above are satisfied by the author
+groups: {}
